@@ -1,0 +1,26 @@
+= Webscripting Alpine Docker Image
+
+This is a simple docker image to support typical scripting targetting web based resources.
+It includes the tools
+
+* https://pkgs.alpinelinux.org/package/edge/main/x86/bash[bash]
+* https://pkgs.alpinelinux.org/package/edge/main/x86/curl[curl]
+* https://pkgs.alpinelinux.org/package/edge/main/x86/wget[wget]
+* https://pkgs.alpinelinux.org/package/edge/main/x86/jq[jq]
+* https://pkgs.alpinelinux.org/package/edge/community/x86/httpie[httpie]
+
+The image can be https://cloud.docker.com/u/rgielen/repository/docker/rgielen/webscripting-alpine[found on Docker Hub].
+
+The source code is https://github.com/rgielen/webscripting-alpine[hosted on Github].
+
+== Pulling the image
+
+```sh
+docker pull rgielen/webscripting-alpine
+```
+
+== Using the image
+
+```sh
+docker run -it --rm rgielen/webscripting-alpine /bin/bash
+```
